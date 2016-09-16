@@ -13,15 +13,17 @@ public class LocationLoc {
     private double longitude;
     private double altitude;
     private long timeInmillis;
+    private double speed;
     private String provider;
 
 
-    public LocationLoc(String deviceId, double latitude, double longitude, double altitude, long timeInmillis, String provider) {
+    public LocationLoc(String deviceId, double latitude, double longitude, double altitude, long timeInmillis, String provider, double speed) {
         this.deviceId = deviceId;
         this.latitude = latitude;
         this.longitude = longitude;
         this.altitude = altitude;
         this.timeInmillis = timeInmillis;
+        this.speed = speed;
         this.provider = provider;
     }
 
@@ -72,6 +74,13 @@ public class LocationLoc {
     public void setProvider(String provider) {
         this.provider = provider;
     }
+    public double getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(float speed) {
+        this.speed = speed;
+    }
 
     @Exclude
     public Map<String, Object> toMap() {
@@ -82,6 +91,7 @@ public class LocationLoc {
         result.put(DataConstants.LOCATION_ALTITUDE, altitude);
         result.put(DataConstants.LOCATION_TIME, timeInmillis);
         result.put(DataConstants.LOCATION_PROVIDER, provider);
+        result.put(DataConstants.LOCATION_SPEED, speed);
 
         return result;
     }

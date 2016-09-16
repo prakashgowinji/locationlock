@@ -14,4 +14,5 @@ public class DataConstants {
     public static final String LOCATION_ALTITUDE = "altitude";
     public static final String LOCATION_TIME = "timeInmillis";
     public static final String LOCATION_PROVIDER = "provider";
+    public static final String LOCATION_SPEED = "speed";
 }

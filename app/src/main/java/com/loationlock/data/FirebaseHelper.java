@@ -41,7 +41,6 @@ public class FirebaseHelper {
     }
 
     public void pushLocationInfo(LocationLoc locationLoc) {
-        //String key = locationNode.child(DataConstants.LOCATION_NODE_NAME).push().getKey();
         String key = locationNode.push().getKey();
         System.out.println("XXX Key: "+ key);
         Map<String, Object> postValues = locationLoc.toMap();

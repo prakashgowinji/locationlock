@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -34,20 +36,9 @@
             </intent-filter>
         </activity>
 
-        <receiver
-            android:enabled="true"
-            android:name=".bcr.LocLockBroadcastReceiver"
-            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </receiver>
-        <service
-            android:name=".service.LocationService"
-            android:enabled="true"
-            android:exported="true" >
-        </service>
+        <receiver android:name=".bcr.LocLockBroadcastReceiver" />
+        <receiver android:name="loationlock.com.locpoller.LocationPoller" />
+        <service android:name="loationlock.com.locpoller.LocationPollerService" />
 
     </application>
 
