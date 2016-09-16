@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "477859669698",
+    "firebase_url": "https://locationlock-5330c.firebaseio.com",
+    "project_id": "locationlock-5330c",
+    "storage_bucket": "locationlock-5330c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477859669698:android:4772d0198eb4cdb6",
+        "android_client_info": {
+          "package_name": "com.loationlock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477859669698-88gjtc2618onthr3kjt76mr935mnt0ce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0Az8nFgP6nev9KTT2kukMpUo5WbcL6z0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
